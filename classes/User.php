@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . "/PremiumUser.php";
+
 class User {
     private $name;
     private $surname;

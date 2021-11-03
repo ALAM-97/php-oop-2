@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . "./classes/User.php";
-require_once __DIR__ . "./classes/Product.php";
+require_once __DIR__ . "/classes/User.php";
+require_once __DIR__ . "/classes/Product.php";
 
 // inserisco due nuovi utenti
 $user1 = new User("Matteo", "Rossi", "matteo.rossi@gmail.com");
@@ -14,3 +14,5 @@ $product3 = new Product("Tv", "430,00€", "Home appliances");
 
 //inserisco degli utenti PREMIUM
 $PremiumUser1 = new PremiumUser("Alessandro", "Bianchi", "alessandro.bianchi@gmail.com", 2);
+
+var_dump($PremiumUser1);

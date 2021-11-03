@@ -1,10 +1,14 @@
 <?php 
 
 require_once __DIR__ . "/User.php";
+require_once __DIR__ . "/Cart.php";
 
 class PremiumUser extends User {
 
+    use Cart;
+
     private $membership;
+    public $cart;
 
     public function __construct($_name, $_surname, $_email, $_membership)
     {
