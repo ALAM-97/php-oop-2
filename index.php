@@ -15,4 +15,9 @@ $product3 = new Product("Tv", "430,00€", "Home appliances");
 //inserisco degli utenti PREMIUM
 $PremiumUser1 = new PremiumUser("Alessandro", "Bianchi", "alessandro.bianchi@gmail.com", 2);
 
-var_dump($PremiumUser1);
+// aggiungo dei prodotti al carrello
+$PremiumUser1->addProduct($product2);
+$PremiumUser1->addProduct($product3);
+
+// controllo gli elementi nel carrello
+var_dump($PremiumUser1->getCart());
