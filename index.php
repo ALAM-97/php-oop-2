@@ -19,5 +19,13 @@ $PremiumUser1 = new PremiumUser("Alessandro", "Bianchi", "alessandro.bianchi@gma
 $PremiumUser1->addProduct($product2);
 $PremiumUser1->addProduct($product3);
 
-// controllo gli elementi nel carrello
-var_dump($PremiumUser1->getCart());
+// imposto la membership
+$PremiumUser1->setMembership(1);
+
+// imposto uno sconto 
+$PremiumUser1->setDiscount(1);
+
+var_dump($PremiumUser1);
+
+
+
